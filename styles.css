@@ -9,8 +9,7 @@
    
 .navbar-brand {
     float: left;
-    min-height: 55px;
-    padding: 0 15px 5px;
+    padding: 5px 5px 5px 30px;
 }
 
 .navbar-inverse .navbar-nav .active a, 
@@ -18,10 +17,14 @@
     .navbar-inverse .navbar-nav .active a:hover {
         color: #FFF;
         background-color: #5E4485;
+    
     }
     
 .navbar-inverse .navbar-nav li a {
     color: #d5d5d5;
+}
+
+
 }
 
 .carousel-caption {
@@ -43,6 +46,19 @@
 }
 
 @media(max-width: 600px) {
+    .navbar-brand {
+        height: 0px;
+        min-height: none;
+    }
+    p {
+        text-align: center;
+        padding: 10px;
+    }
+    h4 {
+        text-align: center;
+        padding: 10px;
+    }
+    
     .carousel-caption {
         display: none;
     }
@@ -53,6 +69,63 @@
     
     h2 {
         font-size: 1.7em;
+    }
+    
+}
+
+@media(max-width: 768px) {
+    p {
+        text-align: center;
+    }
+    
+    h4 {
+        text-align: center;
+        padding: 10px;
+    }
+    
+    .content {
+        text-align: center;
+    }
+    
+    .content img {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        padding-top: 20px;
+    }
+    
+    .less {
+        padding-top: 10%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .sass {
+        padding-top: 10%;
+        max-height: 300px;
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media(max-width: 900px) {
+    .fa {
+        font-size: 20px;
+        padding: 10px;
+    }
+    
+}
+
+@media(min-width: 1024px) {
+    
+    .less {
+        padding-top: 20%;
+        
+    }
+    
+    .sass {
+        padding-top: 10%;
     }
 }
 
@@ -65,6 +138,33 @@
     margin: 4% auto;
 }
 
-#logo {
-    padding: 10px 10px;
+.carousel-caption {
+     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.85);
+}
+
+footer {
+    width: 100%;
+    background-color: #5e4485;
+    padding: 3%;
+    color: white;
+}
+
+.bunny {
+    max-width: 200px;  
+    height: auto;
+}
+
+.fa {
+    padding: 15px;
+    font-size: 20px;
+    color: white;
+}
+
+.fa:hover {
+    text-decoration: none;
+    color: #d5d5d5;
+}
+
+#myNavBar {
+    text-align: center;
 }

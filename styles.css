@@ -1,15 +1,28 @@
+/* HEADER ITEMS */
+
+#icon {
+    max-width: 200px;
+    margin: 1% auto;
+}
+
+
+/* NAVBAR ITEMS */
 .navbar {
     margin-bottom: 0;
     border-radius: 0;
     background-color: #5e4485;
     color: #fff;
-    padding: 1% 0;
+    padding: 0;
     font-size: 1.2em;
 }   
    
 .navbar-brand {
-    float: left;
-    padding: 5px 5px 5px 30px;
+    height: auto;
+    padding: 0;
+}
+
+.navbar-brand img {
+    padding: 10px 15px;
 }
 
 .navbar-inverse .navbar-nav .active a, 
@@ -17,16 +30,21 @@
     .navbar-inverse .navbar-nav .active a:hover {
         color: #FFF;
         background-color: #5E4485;
+        padding-left: 0;
     
     }
     
 .navbar-inverse .navbar-nav li a {
     color: #d5d5d5;
+  
+}
+
+#myNavBar {
+    text-align: center;
 }
 
 
-}
-
+/* BODY ITEMS */
 .carousel-caption {
     top: 50%;
     transform: translateY(-50%);
@@ -41,15 +59,66 @@
     border: 2px solid #fff;
 }
 
-.btn:hover {
-    
+.btn:active {
+    font-size: 18px;
+    color: #fff;
+    padding: 12px 22px;
+    background-color: #5e4485;
+    border: 2px solid #fff;
+}
+
+button a {
+    color: white !important;
+}
+
+
+.container {
+    margin: 4% auto;
+}
+
+.carousel-caption {
+     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.85);
+}
+
+/* FOOTER ITEMS */
+
+footer {
+    width: 100%;
+    background-color: #5e4485;
+    padding: 3%;
+    color: white;
+}
+
+.bunny {
+    max-width: 200px;  
+    height: auto;
+}
+
+.fa {
+    padding: 15px;
+    font-size: 20px;
+    color: white;
+}
+
+.fa:hover {
+    text-decoration: none;
+    color: #d5d5d5;
+}
+
+/* MEDIA */
+
+@media(min-width: 768px) {
+    .navbar-right {
+        display: flex;
+    }
 }
 
 @media(max-width: 600px) {
-    .navbar-brand {
+    /*.navbar-brand {
         height: 0px;
         min-height: none;
-    }
+    }*/
+    
     p {
         text-align: center;
         padding: 10px;
@@ -115,7 +184,12 @@
         padding: 10px;
     }
     
+    
 }
+    
+    
+    
+
 
 @media(min-width: 1024px) {
     
@@ -127,44 +201,18 @@
     .sass {
         padding-top: 10%;
     }
+    
+ 
 }
 
-#icon {
-    max-width: 200px;
-    margin: 1% auto;
-}
 
-.container {
-    margin: 4% auto;
-}
 
-.carousel-caption {
-     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.85);
-}
 
-footer {
-    width: 100%;
-    background-color: #5e4485;
-    padding: 3%;
-    color: white;
-}
 
-.bunny {
-    max-width: 200px;  
-    height: auto;
-}
 
-.fa {
-    padding: 15px;
-    font-size: 20px;
-    color: white;
-}
 
-.fa:hover {
-    text-decoration: none;
-    color: #d5d5d5;
-}
 
-#myNavBar {
-    text-align: center;
-}
+
+
+
+
